@@ -1,0 +1,3 @@
+rootProject.name = 'penjunior'
+
+include ':app'
