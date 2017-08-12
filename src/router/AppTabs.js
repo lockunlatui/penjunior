@@ -24,7 +24,7 @@ export const AppTabs = StackNavigator({
                 source={iconHome}
                 style={[style.iconHome, { tintColor: tintColor }]}
               />,
-            tabBarLabel: "Home"
+            title: "Home"
           }
         },
         Screen_TruocMangThai: {
@@ -62,12 +62,6 @@ export const AppTabs = StackNavigator({
           navigationOptions: {
             tabBarLabel: "Thiếu nhi"
           }
-        },
-        Screen_LienHe: {
-          screen: LienHeR,
-          navigationOptions: {
-            tabBarLabel: "Liên hệ"
-          }
         }
       },
       {
@@ -75,20 +69,23 @@ export const AppTabs = StackNavigator({
         mode: "modal",
         tabBarOptions: {
           tabStyle: {
-            width: 100,
+            width: 85,
             height: 50,
             borderBottomWidth: 2,
             borderBottomColor: "#CCC"
           },
           upperCaseLabel: false,
           labelStyle: {
-            fontSize: 12
+            fontSize: 12,
+            fontWeight: "bold"
           },
           style: {
             backgroundColor: "#FFF"
           },
           activeTintColor: "#01c8ff",
-          inactiveTintColor: "#979797"
+          inactiveTintColor: "#979797",
+          scrollEnabled: true,
+          pressColor: "#CCC"
         }
       }
     )
