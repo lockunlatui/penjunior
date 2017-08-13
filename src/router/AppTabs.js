@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { Image, TouchableOpacity, View } from "react-native";
+import {
+  Text,
+  Image,
+  TouchableOpacity,
+  View,
+  Dimensions,
+  StyleSheet
+} from "react-native";
 import { StackNavigator, TabNavigator } from "react-navigation";
 import { HomeR } from "./HomeR";
 import { TruocMangThaiR } from "./TruocMangThaiR";
@@ -11,6 +18,7 @@ import { ThieuNhiR } from "./ThieuNhiR";
 import { LienHeR } from "./LienHeR";
 import style from "../Style";
 import iconHome from "../images/home.png";
+const { width } = Dimensions.get("window");
 
 export const AppTabs = StackNavigator({
   HomeR: {
@@ -19,12 +27,11 @@ export const AppTabs = StackNavigator({
         Screen_Home: {
           screen: HomeR,
           navigationOptions: {
-            tabBarIcon: ({ tintColor }) =>
+            tabBarLabel: ({ tintColor }) =>
               <Image
                 source={iconHome}
                 style={[style.iconHome, { tintColor: tintColor }]}
-              />,
-            title: "Home"
+              />
           }
         },
         Screen_TruocMangThai: {
@@ -68,26 +75,44 @@ export const AppTabs = StackNavigator({
         lazy: true,
         mode: "modal",
         tabBarOptions: {
+          indicatorStyle: {
+            backgroundColor: "#01c8ff",
+            height: 3
+          },
           tabStyle: {
-            width: 85,
+            width: width * 0.2,
             height: 50,
-            borderBottomWidth: 2,
+            borderBottomWidth: 1,
             borderBottomColor: "#CCC"
           },
           upperCaseLabel: false,
           labelStyle: {
-            fontSize: 12,
-            fontWeight: "bold"
+            fontSize: 10,
+            fontFamily: "Roboto-Black"
           },
           style: {
             backgroundColor: "#FFF"
           },
           activeTintColor: "#01c8ff",
-          inactiveTintColor: "#979797",
+          inactiveTintColor: "#88daf1",
           scrollEnabled: true,
           pressColor: "#CCC"
         }
       }
     )
+  }
+});
+
+const styles = StyleSheet.create({
+  tabLabelStyle: {
+    color: "#666",
+    borderRadius: 100,
+    padding: 6,
+    paddingLeft: 16,
+    paddingRight: 16,
+    margin: 0
+  },
+  activeTabLabelStyle: {
+    backgroundColor: "#01c8ff"
   }
 });

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity, Image } from "react-native";
+import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
+import ContentTK from "./ContentTK";
 import iconMenu from "../../../images/menu.png";
 import iconLogo from "../../../images/logo_penjunior.png";
 import style from "../../../Style";
@@ -20,9 +21,9 @@ class ThaiKy extends Component {
   });
   render() {
     return (
-      <View>
-        <Text>Thai Ky</Text>
-      </View>
+      <ScrollView style={style.scrWrap}>
+        <ContentTK />
+      </ScrollView>
     );
   }
 }

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity, Image } from "react-native";
+import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
 import iconMenu from "../../../images/menu.png";
 import iconLogo from "../../../images/logo_penjunior.png";
 import style from "../../../Style";
+import ContentTMT from "./ContentTMT";
 
 class TruocMangThai extends Component {
   static navigationOptions = ({ navigation }) => ({
@@ -20,9 +21,9 @@ class TruocMangThai extends Component {
   });
   render() {
     return (
-      <View>
-        <Text>Trước mang thai</Text>
-      </View>
+      <ScrollView style={style.scrWrap}>
+        <ContentTMT />
+      </ScrollView>
     );
   }
 }

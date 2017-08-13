@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity, Image } from "react-native";
+import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
+import ContentSS from "./ContentSS";
 import iconMenu from "../../../images/menu.png";
 import iconLogo from "../../../images/logo_penjunior.png";
 import style from "../../../Style";
@@ -20,9 +21,9 @@ class SoSinh extends Component {
   });
   render() {
     return (
-      <View>
-        <Text>So Sinh</Text>
-      </View>
+      <ScrollView style={style.scrWrap}>
+        <ContentSS />
+      </ScrollView>
     );
   }
 }

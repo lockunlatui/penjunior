@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity, Image } from "react-native";
+import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
+import ContentMG from "./ContentMG";
 import iconMenu from "../../../images/menu.png";
 import iconLogo from "../../../images/logo_penjunior.png";
 import style from "../../../Style";
@@ -20,9 +21,9 @@ class MauGiao extends Component {
   });
   render() {
     return (
-      <View>
-        <Text>Mau Giao</Text>
-      </View>
+      <ScrollView style={style.scrWrap}>
+        <ContentMG />
+      </ScrollView>
     );
   }
 }

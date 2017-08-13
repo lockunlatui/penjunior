@@ -5,7 +5,8 @@ import {
   TouchableOpacity,
   Image,
   Button,
-  View
+  View,
+  Dimensions
 } from "react-native";
 import Slide from "./Slide";
 import Content from "./Content";
@@ -30,7 +31,7 @@ class Home extends Component {
   render() {
     const { navigation } = this.props;
     return (
-      <ScrollView style={{ backgroundColor: "#FFF" }}>
+      <ScrollView style={style.scrWrap}>
         <Slide />
         <Content />
       </ScrollView>
