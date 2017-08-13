@@ -17,9 +17,7 @@ export default {
     backgroundColor: "#FFF",
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 10,
-    borderBottomColor: "#CCC",
-    borderBottomWidth: 1
+    padding: 10
   },
   wrapH: {
     height: height * 0.08,
@@ -28,12 +26,12 @@ export default {
     justifyContent: "space-between"
   },
   icon: {
-    width: width * 0.06,
-    height: width * 0.06
+    width: width * 0.08,
+    height: width * 0.08
   },
   iconLogo: {
     width: width * 0.1,
-    height: width * 0.06
+    height: width * 0.08
   },
   iconHome: {
     width: width * 0.06,
@@ -49,18 +47,16 @@ export default {
     padding: 10
   },
   txtTDSlide: {
-    fontSize: 15,
+    fontSize: 25,
     color: "#333333",
-    padding: 10,
-    fontFamily: "Roboto-Bold"
+    padding: 10
   },
   styleXT: {
     borderColor: "#eaeaea",
     borderWidth: 1
   },
   txtXT: {
-    fontSize: 11,
-    fontFamily: "Roboto-Bold",
+    fontSize: 15,
     color: "#01c8ff",
     padding: 5
   },
@@ -69,16 +65,14 @@ export default {
     height: imgHFContent
   },
   txtTDFContent: {
-    fontFamily: "Roboto-Bold",
     fontWeight: "700",
     color: "#4f5d73",
-    fontSize: 13,
+    fontSize: 20,
     padding: 10
   },
   txtNDFContent: {
-    fontFamily: "Roboto-Regular",
     color: "#888888",
-    fontSize: 11,
+    fontSize: 15,
     padding: 10,
     height: height * 0.1
   },
@@ -99,14 +93,13 @@ export default {
     margin: 10
   },
   txtTDContent: {
-    fontFamily: "Roboto-Regular",
-    fontSize: 11,
+    fontSize: 15,
     height: height * 0.1,
-    marginTop: 10
+    marginTop: 10,
+    color: "#888888"
   },
   txtDK: {
     color: "#FFF",
-    fontFamily: "Roboto-Regular",
     fontSize: 13
   },
   styleDK: {

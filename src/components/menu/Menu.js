@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity, Image, TextInput } from "react-native";
+import { Text, View, TouchableOpacity, Image } from "react-native";
 import style from "../../Style";
 import avatar from "../../images/avatar.png";
 import iconSearch from "../../images/search.png";
@@ -55,12 +55,6 @@ class Menu extends Component {
                 Thông tin
               </Text>
             </View>
-            <TextInput
-              style={{ color: "#01c8ff", fontSize: 10, marginLeft: 50 }}
-              keyboardType={"phone-pad"}
-            >
-              0939 711 252
-            </TextInput>
           </View>
         </View>
 

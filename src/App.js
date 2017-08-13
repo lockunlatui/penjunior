@@ -1,10 +1,15 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, Text, StatusBar } from "react-native";
 import { SlideMenu } from "./router/SlideMenu";
 
 class App extends Component {
   render() {
-    return <SlideMenu />;
+    return (
+      <View style={{ flex: 1 }}>
+        <StatusBar hidden={true} />
+        <SlideMenu />
+      </View>
+    );
   }
 }
 

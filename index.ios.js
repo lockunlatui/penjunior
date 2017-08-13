@@ -14,4 +14,4 @@ export default class penjunior extends Component {
   }
 }
 
-AppRegistry.registerComponent("penjunior", () => penjunior);
+AppRegistry.registerComponent("main", () => penjunior);

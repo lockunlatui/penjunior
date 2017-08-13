@@ -72,7 +72,10 @@ export const AppTabs = StackNavigator({
         }
       },
       {
-        lazy: true,
+        ...TabNavigator.Presets.AndroidTopTabs,
+        tabBarPosition: "top",
+        swipeEnabled: true,
+        animationEnabled: true,
         mode: "modal",
         tabBarOptions: {
           indicatorStyle: {
@@ -80,21 +83,22 @@ export const AppTabs = StackNavigator({
             height: 3
           },
           tabStyle: {
-            width: width * 0.2,
+            width: 80,
             height: 50,
-            borderBottomWidth: 1,
-            borderBottomColor: "#CCC"
+            marginTop: 10
           },
           upperCaseLabel: false,
           labelStyle: {
-            fontSize: 10,
-            fontFamily: "Roboto-Black"
+            fontSize: 13,
+            fontWeight: "bold"
           },
           style: {
-            backgroundColor: "#FFF"
+            backgroundColor: "#FFF",
+            borderTopColor: "#DDD",
+            borderTopWidth: 0.5
           },
           activeTintColor: "#01c8ff",
-          inactiveTintColor: "#88daf1",
+          inactiveTintColor: "#CCC",
           scrollEnabled: true,
           pressColor: "#CCC"
         }

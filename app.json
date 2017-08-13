@@ -1,4 +1,7 @@
 {
   "name": "penjunior",
-  "displayName": "penjunior"
+  "displayName": "penjunior",
+  "expo": {
+    "sdkVersion": "19.0.0"
+  }
 }
