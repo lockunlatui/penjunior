@@ -26,6 +26,13 @@ class Slide extends Component {
     if (this.state.visibleSwiper) {
       swiper = (
         <Swiper
+          containerStyle={{
+            flex: 1,
+            height: "100%",
+            width: "100%",
+            alignSelf: "stretch",
+            backgroundColor: "#fff"
+          }}
           autoplay={true}
           showsPagination={true}
           width={imgW}

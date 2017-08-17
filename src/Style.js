@@ -100,7 +100,8 @@ export default {
   },
   txtDK: {
     color: "#FFF",
-    fontSize: 13
+    fontSize: 13,
+    fontWeight: "bold"
   },
   styleDK: {
     height: height * 0.3,
@@ -121,10 +122,12 @@ export default {
   },
   txtND: {
     color: "#000",
-    marginLeft: 10
+    marginLeft: 10,
+    fontSize: 15,
+    fontWeight: "bold"
   },
   styleND: {
-    height: height * 0.1,
+    height: "auto",
     borderLeftColor: "#CCC",
     borderLeftWidth: 1,
     marginLeft: 22
@@ -140,13 +143,39 @@ export default {
     marginLeft: 20
   },
   styleLH: {
-    height: height * 0.19,
+    height: "auto",
     borderLeftColor: "#CCC",
     borderLeftWidth: 1,
     marginLeft: 22
   },
   txtGY: {
-    fontSize: 10,
-    marginLeft: 60
+    fontSize: 11,
+    marginTop: 10,
+    marginLeft: 50
+  },
+  txtCham: {
+    color: "#DDD"
+  },
+  txtNDC: {
+    color: "#000",
+    fontSize: 13,
+    marginLeft: 10
+  },
+  styleCopyR: {
+    backgroundColor: "#CCC",
+    marginTop: 20
+  },
+  txtPhone: {
+    fontSize: 11,
+    marginTop: 10,
+    marginLeft: 50,
+    color: "#01c8ff"
+  },
+  styleNDCR: {
+    height: "auto",
+    borderLeftColor: "#CCC",
+    borderLeftWidth: 1,
+    marginLeft: 22,
+    margin: 10
   }
 };
